@@ -21,9 +21,20 @@
         font-weight: bold;
         padding-top: 5px;
       }
+      .nav>li>a {
+        padding: 3px 10px;
+      }
+      li ul.nav {
+        padding-left: 15px;
+      }
+      li ul.nav>li.active>a {
+        color: #337ab7;
+        background-color: transparent !important;
+        border-bottom: solid 1px #337ab7;
+      }
     </style>
 </head>
-<body>
+<body style="" data-spy="scroll" data-target="#left-nav">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand" href="#">Metodología V&amp;V</a></div>
