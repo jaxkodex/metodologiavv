@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand" href="/">Metodología V&amp;V</a></div>
+            <div class="navbar-header"><a class="navbar-brand" href="#">Metodología V&amp;V</a></div>
             <!--<div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#procesos">Procesos</a></li>
@@ -30,7 +30,7 @@
     <div class="container page-contents">
         <div class="col-md-3">
   <nav class="hidden-print hidden-xs hidden-sm">
-    <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="5" data-offset-bottom="5">
+    <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="0">
       <li><a href="#intro">Introducción</a></li>
       <li><a href="#modelos">Modelos Utilizados</a></li>
       <li><a href="#alcance">Alcance</a></li>
@@ -40,6 +40,11 @@
       <li><a href="#modeloproceso">Modelo del Proceso</a></li>
       <li><a href="#roles">Roles y Responsabilidades</a></li>
       <li><a href="#procesos">Procesos</a></li>
+      <li><a href="#p-inicio">Proceso: Inicio</a></li>
+      <li><a href="#p-planificacion">Proceso: Planificación</a></li>
+      <li><a href="#p-ejecucion">Proceso: Ejecución</a></li>
+      <li><a href="#p-aseguramiento">Proceso: Aseguramiento de la Calidad</a></li>
+      <li><a href="#p-gconfiguracion">Proceso: Gestión de la Configuración</a></li>
       <li><a href="#p-gproyecto">Proceso: Gestión del Proyecto</a></li>
     </ul>
   </nav>
@@ -53,7 +58,7 @@
     estándar NTP-RT-ISO/IEC TR 29110-5-1-2 en pequeñas y medianas empresas (PyME)
     peruanas.</p>
 
-  <h3 id="modelos">Modelos utilizados</h3>
+  <h3 id="modelos">Modelos utilizados</h3>planificacion
 
   <ul>
     <li>NTP-RT-ISO/IEC TR 29110-5-1-2 Ingeniería de software. Perfiles el ciclo
@@ -85,7 +90,7 @@
     <li>Mediana empresa: entre 51 y 250 trabajadores.</li>
   </ul>
 
-  <h3 id="objetivo">Objetivo</h3>
+  <h3 id="objetivo">Objetivos</h3>
 
   <h3 id="politicas">Políticas</h3>
   <ul>
@@ -175,13 +180,69 @@ Apoyo administrativo </td>
 
   <h4 id="p-inicio">Proceso: Inicio</h4>
 
+    <table class="table">
+      <thead>
+          <tr>
+            <th>Rol</th>
+            <th>Tarea </th>
+            <th>Entrada</th>
+            <th>Herramienta / Técnica </th>
+            <th>Salida</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr><td>ET</td><td>Revisar el Plan de Proyecto</td><td>Plan de Pro yecto</td><td>Reuniones </td><td>Plan de Proyecto [revisado]</td>
+        </tr>
+        <tr><td>ET</td><td>Revisar el Enunciado de trabajo del Proyecto</td><td>Enunciado de trabajo</td><td>Reuniones </td><td>Enunciado de trabajo [revisado]</td></tr>
+      </tbody>
+    </table>
+
   <h4 id="p-planificacion">Proceso: Planificación</h4>
+
+  <table class="table">
+    <thead>
+      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de ProyectoEnunciado de trabajo del Proyecto </td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos Plan de Proyecto</td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr><tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño <p class="c0 c2 c3"><span class="c5">Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c2 c3"><span class="c5"><p class="c0 c3"><span class="c34">Matriz de Trazabilidad<p class="c0 c2 c3"><span class="c5">Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de Prueba<p class="c0 c2 c3"><span class="c5">Especificación de Requisitos [validado]<p class="c0 c2 c3"><span class="c5">Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr></tbody></table>
 
   <h4 id="p-ejecucion">Proceso: Ejecución</h4>
 
+  <table class="table">
+    <thead>
+      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+
+      </thead>
+      <tbody>
+      <tr><td>PR</td><td>Construcción de componentes </td><td>Documento de ArquitecturaCasos de Prueba [verificado]</td><td>Codificación de pares, Analizador de código estático</td><td>Componente Software </td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Componente Software [defectuoso]</td><td>Análisis de defectos</td><td>Componente Software [corregido]</td></tr><tr><td>PR</td><td>Actualizar los casos de prueba </td><td>Casos de Prueba [verificado]</td><td>Análisis de casos de pruebas</td><td>Componente Software [probado]</td></tr><tr><td>PR</td><td>Integración de componentes software </td><td>Componente Software [corregido]</td><td>Git, Integración Continua</td><td>Software [integrado]</td></tr><tr><td>PR</td><td>Realizar pruebas unitarias de software</td><td>Casos de Prueba [verificado]</td><td>Herramientas de pruebas unitarias</td><td>Software [probado]</td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Software [probado]</td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Software [corregido]</td></tr></tbody></table>
+
+  <h4 id="p-aseguramiento">Proceso: Aseguramiento de la Calidad</h4>
+
+  <table class="table">
+    <thead>
+      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+
+    </thead>
+    <tbody>
+      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<p class="c0 c2 c3"><span class="c5 c6">Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]Nuevo Requerimiento de Usuario</td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Solicitud de corrección<p class="c0 c2 c3"><span class="c5 c6">Solicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<p class="c0 c2 c3"><span class="c5">Software</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td><p class="c0 c2 c3"><span class="c5"></td><td>Manual de Instalación </td></tr></tbody></table>
+
   <h4 id="p-gconfiguracion">Proceso: Gestión de la configuración</h4>
 
+  <table class="table">
+    <thead>
+      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>LT</td><td>Incorporar especificación de requisitos </td><td>Especificación de requisitos [validado]</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Especificación de Requisitos [línea base]</td></tr><tr><td>LT</td><td>Incorporar Diseño de Software</td><td>Diseño de Software [verificado]</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Diseño de Software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Registro de Trazabilidad</td><td>Registro de Trazabilidad [verificado]</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Registro de Trazabilidad [línea base]</td></tr><tr><td>LT</td><td>Incorporar casos de prueba</td><td>Casos de Prueba [verificado]</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Casos de Prueba [línea base]</td></tr><tr><td>LT</td><td>Incorporar componente de software</td><td>Componente de software [corregido]</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Componente de software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Manual de Usuario</td><td>Manual de Usuario</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Manual de Usuario [línea base]</td></tr></tbody></table>
+
   <h4 id="p-gproyecto">Proceso: Gestión del Proyecto</h4>
+
+  <table class="table">
+    <thead>
+      <tr><th>Rol</th><th class="c31" colspan="1" rowspan="1">Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GP, CL</td><td class="c31" colspan="1" rowspan="1">Generar el Acta de Constitución del Proyecto</td><td>Caso de NegocioEnunciado de trabajo del proyecto </td><td>Reuniones </td><td>Acta de Constitución del Proyecto </td></tr><tr><td>GP</td><td class="c31" colspan="1" rowspan="1">Generar el Plan para la Dirección del Proyecto</td><td>Acta de Constitución del Proyecto</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Plan para la Dirección del Proyecto</td></tr><tr><td>GP</td><td class="c31" colspan="1" rowspan="1">Actualizaciones al Plan para la Dirección del Proyecto </td><td>Plan para la Dirección del Proyecto</td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Plan para la Dirección del Proyecto [actualizado]</td></tr><tr><td>ET</td><td class="c31" colspan="1" rowspan="1">Generar entregables </td><td>Plan para la Dirección del Proyecto</td><td><p class="c0 c2 c3"><span class="c5 c6"></td><td>Entregable </td></tr><tr><td>ET</td><td class="c31" colspan="1" rowspan="1">Cierre de Proyecto o fase</td><td>Plan de Dirección del ProyectoSolicitudes de cambio aprobadas</td><td><p class="c0 c2 c3"><span class="c5"></td><td>Entregable </td></tr></tbody></table>
 </div>
 
     </div>
