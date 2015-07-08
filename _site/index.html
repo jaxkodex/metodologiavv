@@ -13,6 +13,14 @@
       .img-diagram {
         margin: 0 auto;
       }
+      .img-holder {
+        max-width: 550px;
+        margin: 0 auto;
+      }
+      .img-footer-text {
+        font-weight: bold;
+        padding-top: 5px;
+      }
     </style>
 </head>
 <body>
@@ -146,7 +154,16 @@
     para el desarrollo de software, propone un conjunto de procesos que guiarán
     el proceso de desarrollo de software, A continuación se muestran las relaciónes
     entre los procesos y se detallará cada uno de ellos.</p>
-  <img class="img-responsive img-diagram" src="img/proceso.png" />
+
+  <div class="well well-sm">
+    <div class="img-holder">
+      <img class="img-responsive img-diagram" src="img/proceso.png" />
+    </div>
+    <div class="img-holder img-footer-text">
+      Fig. 1: Diagrama de los procesos.
+    </div>
+  </div>
+
   <div id="roles" style="height: 50px;"></div>
   <h3>Roles y Responsabilidades</h3>
 
@@ -216,7 +233,14 @@ Apoyo administrativo </td>
   <div id="p-inicio" style="height: 50px;"></div>
   <h4>Proceso: Inicio</h4>
 
-  <img class="img-responsive img-inicio" src="img/config.png" />
+      <div class="well well-sm">
+        <div class="img-holder">
+          <img class="img-responsive img-diagram" src="img/inicio.png" />
+        </div>
+        <div class="img-holder img-footer-text">
+          Fig. 2: Proceso: Inicio
+        </div>
+      </div>
     <table class="table table-striped">
       <thead>
           <tr>
@@ -237,18 +261,34 @@ Apoyo administrativo </td>
   <div id="p-planificacion" style="height: 50px;"></div>
   <h4>Proceso: Planificación</h4>
 
-  <img class="img-responsive img-diagram" src="img/planificacion.png" />
+        <div class="well well-sm">
+          <div class="img-holder">
+            <img class="img-responsive img-diagram" src="img/planificacion.png" />
+          </div>
+          <div class="img-holder img-footer-text">
+            Fig. 3: Proceso: Planificación
+          </div>
+        </div>
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr><tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de TrazabilidadEspecificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr></tbody></table>
+    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos<br />Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr><tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de Trazabilidad<br />Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr></tbody></table>
 
   <div id="p-ejecucion" style="height: 50px;"></div>
   <h4>Proceso: Ejecución</h4>
 
-  <img class="img-responsive img-diagram" src="img/ejecucion.png" />
+          <div class="well well-sm">
+            <div class="img-holder">
+              <img class="img-responsive img-diagram" src="img/ejecucion.png" />
+            </div>
+            <div class="img-holder img-footer-text">
+              Fig. 4: Proceso: Ejecución
+            </div>
+          </div>
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
@@ -260,19 +300,34 @@ Apoyo administrativo </td>
   <div id="p-aseguramiento" style="height: 50px;"></div>
   <h4>Proceso: Aseguramiento de la Calidad</h4>
 
-  <img class="img-responsive img-diagram" src="img/calidad.png" />
+  <div class="well well-sm">
+    <div class="img-holder">
+      <img class="img-responsive img-diagram" src="img/calidad.png" />
+    </div>
+    <div class="img-holder img-footer-text">
+      Fig. 5: Proceso: Calidad
+    </div>
+  </div>
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
 
     </thead>
     <tbody>
-      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]Software</td><td></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr></tbody></table>
+      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<br />Software</td><td></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr></tbody></table>
 
   <div id="p-gconfiguracion" style="height: 50px;"></div>
   <h4>Proceso: Gestión de la configuración</h4>
+  <div class="well well-sm">
+    <div class="img-holder">
+      <img class="img-responsive img-diagram" src="img/config.png" />
+    </div>
+    <div class="img-holder img-footer-text">
+      Fig. 6: Proceso: Gestión de la Configuración
+    </div>
+  </div>
 
-  <img class="img-responsive img-diagram" src="img/config.png" />
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
@@ -282,8 +337,15 @@ Apoyo administrativo </td>
 
   <div id="p-gproyecto" style="height: 50px;"></div>
   <h4>Proceso: Gestión del Proyecto</h4>
+  <div class="well well-sm">
+    <div class="img-holder">
+      <img class="img-responsive img-diagram" src="img/proyecto.png" />
+    </div>
+    <div class="img-holder img-footer-text">
+      Fig. 7: Proceso: Gestión del Proyecto
+    </div>
+  </div>
 
-  <img class="img-responsive img-diagram" src="img/proyecto.png" />
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
