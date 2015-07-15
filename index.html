@@ -25,6 +25,7 @@ title: Metodología V &amp; V
         <li><a href="#p-gproyecto">Proceso: Gestión del Proyecto</a></li>
         </ul>
       </li>
+      <li><a href="#criterios">Criterios</a></li>
       <li><a href="#plantillas">Plantillas</a></li>
     </ul>
   </nav>
@@ -231,6 +232,9 @@ Apoyo administrativo </td>
   <h4><i>Objetivos</i></h4>
   <p>El proceso de Inicio tiene como objetivo involucrar al equipo de trabajo en el proyecto que se va a realizar, es por ello que se brinda la información correspondiente a los miembros con el fin que revisen la información y tengan una idea general del producto software que se va a desarrollar.</p>
 
+  <h4><i>Actividades</i></h4>
+  <p><b>Revisar Documentación:</b> hacer llegar la información del proyecto a los miembros del equipo de trabajo.</p>
+
     <table class="table table-striped">
       <thead>
           <tr>
@@ -248,6 +252,10 @@ Apoyo administrativo </td>
       </tbody>
     </table>
 
+  <h4><i>Tareas</i></h4>
+  <p><b>Revisar el Plan de Proyecto:</b> Hacer llegar el Plan de Proyecto a los miembros del equipo de trabajo para su revisión.</p>
+  <p><b>Revisar el Enunciado de trabajo del Proyecto:</b> Hacer llegar el Enunciado del trabajo del Proyecto a los miembros del equipo de trabajo para su revisión. Los miembros del equipo de trabajo analizan y observan el Enunciado de trabajo de proyecto con la finalidad de despejar cualquier duda que se tenga.</p>
+
   <div id="p-planificacion" style="height: 50px;"></div>
   <h4>Proceso: Planificación</h4>
 
@@ -260,12 +268,33 @@ Apoyo administrativo </td>
           </div>
         </div>
 
+        <h4><i>Objetivos</i></h4>
+        <p>El proceso de Planificación tiene como objetivo generar los artefactos necesarios para que se pueda realizar la construcción del softrwae.</p>
+
+        <h4><i>Actividades</i></h4>
+        <p><b>Requisitos:</b> comprender y documentar los requerimientos del cliente</p>
+        <p><b>Análisis y diseño:</b> generar el documento de diseño del sistema usando la trazabilidad de los requisitos solicitados.</p>
+        <p><b>Ajustes:</b> encaminar el software a lo que el cliente verdaderamente necesita.</p>
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos<br />Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr><tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de Trazabilidad<br />Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr></tbody></table>
+    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos<br />Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr>
+    <tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de Trazabilidad<br />Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr>
+    </tbody>
+  </table>
+
+  <h4><i>Tareas</i></h4>
+  <p><b>Realizar la especificación de requisitos:</b> Se obtienen los requisitos que el cliente brinda.</p>
+  <p><b>Obtener aprobación de la Especificación de Requisitos:</b> El líder técnico del proyecto debe aprobar el Documento de Especificación de Requisitos, para ello revisa que el documento cuente con los estándares que define la metodología y que se declare todo lo necesario para poder enviar el documento para aprobación del cliente.</p>
+  <p><b>Obtener validación de la Especificación de Requisitos:</b> El cliente debe validar que los requisitos especificados por el Analista son los que realmente ha pedido y que se encuentren completos.</p>
+  <p><b>Realizar el Diseño del Software:</b> Se deben elaborar el documento de diseño teniendo en consideración la especificación de requisitos, el alcance, el alcance y las restricciones del proyecto.</p>
+  <p><b>Obtener aprobación del Diseño de Software:</b> El cliente debe aprobar que el diseño realizado esté acorde a los requerimientos validados y al alcance del proyecto.</p>
+  <p><b>Elaborar los casos de prueba:</b> Se deben considerar las diversas casuísticas posibles de ocurrir durante la ejecución del producto software, para ello se deben elaborar los casos de prueba en diversos escenarios bajo diversas circunstancias y/o parámetros.</p>
+  <p><b>Obtener aprobación de los casos de prueba:</b> Se debe revisar que los casos de prueba cubran los diversos escenarios posibles, y además que estos casos de prueba estén acorde a los requerimientos realizados por el cliente.</p>
+  <p><b>Realizar acciones correctivas, preventivas o mejoras:</b> Todas las acciones correctivas, preventivas y mejoras se generarán con solicitudes de cambio aprobadas por el Cliente y el Gestor de Proyecto.</p>
 
   <div id="p-ejecucion" style="height: 50px;"></div>
   <h4>Proceso: Ejecución</h4>
@@ -279,13 +308,30 @@ Apoyo administrativo </td>
             </div>
           </div>
 
+  <h4><i>Objetivos</i></h4>
+  <p>El proceso de Ejecución tiene como objetivo construir y obtener el producto software que da solución al problema que dio origen al proyecto y cumple con los requisitos solicitados por el cliente.</p>
+  <h4><i>Actividades</i></h4>
+  <p><b>Desarrollo:</b> realizar las actividades de construcción del software.</p>
+  <p><b>Pruebas:</b> realizar las pruebas de software definidas para el software.</p>
+
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
 
       </thead>
       <tbody>
-      <tr><td>PR</td><td>Construcción de componentes </td><td>Documento de ArquitecturaCasos de Prueba [verificado]</td><td>Codificación de pares, Analizador de código estático</td><td>Componente Software </td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Componente Software [defectuoso]</td><td>Análisis de defectos</td><td>Componente Software [corregido]</td></tr><tr><td>PR</td><td>Actualizar los casos de prueba </td><td>Casos de Prueba [verificado]</td><td>Análisis de casos de pruebas</td><td>Componente Software [probado]</td></tr><tr><td>PR</td><td>Integración de componentes software </td><td>Componente Software [corregido]</td><td>Git, Integración Continua</td><td>Software [integrado]</td></tr><tr><td>PR</td><td>Realizar pruebas unitarias de software</td><td>Casos de Prueba [verificado]</td><td>Herramientas de pruebas unitarias</td><td>Software [probado]</td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Software [probado]</td><td></td><td>Software [corregido]</td></tr></tbody></table>
+      <tr><td>PR</td><td>Construcción de componentes </td><td>Documento de ArquitecturaCasos de Prueba [verificado]</td><td>Codificación de pares, Analizador de código estático</td><td>Componente Software </td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Componente Software [defectuoso]</td><td>Análisis de defectos</td><td>Componente Software [corregido]</td></tr><tr><td>PR</td><td>Actualizar los casos de prueba </td><td>Casos de Prueba [verificado]</td><td>Análisis de casos de pruebas</td><td>Componente Software [probado]</td></tr><tr><td>PR</td><td>Integración de componentes software </td><td>Componente Software [corregido]</td><td>Git, Integración Continua</td><td>Software [integrado]</td></tr><tr><td>PR</td><td>Realizar pruebas unitarias de software</td><td>Casos de Prueba [verificado]</td><td>Herramientas de pruebas unitarias</td><td>Software [probado]</td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Software [probado]</td><td></td><td>Software [corregido]</td></tr>
+      </tbody>
+  </table>
+
+  <h4><i>Tareas</i></h4>
+  <p><b>Construcción de componentes:</b> Desarrollar cada uno de los componentes diseñados para el producto software.</p>
+  <p><b>Corrección de defectos:</b> Se deben corregir los defectos que el componente software tenga antes de realizar la integración con otros componentes, para ello se deben realizar las pruebas unitarias al componente.</p>
+  <p><b>Actualizar los casos de prueba:</b> Se debe actualizar el registro de casos de prueba en caso surjan, se desestimen, o corrijan las pruebas definidas durante el proceso de Planificación.</p>
+  <p><b>Integración de componentes software:</b> El componente de software desarrollado se debe integrar con los demás componentes del sistema utilizando herramientas de configuración e integración continua.</p>
+  <p><b>Realizar pruebas de software:</b> Las pruebas de software que se realicen deben ser las que fueron definidas en el proceso de Planificación y las que se actualizaron durante la actividad Actualizar los casos de prueba. Esta actividad puede dirigirse a la actividad de Actualizar los casos de prueba en caso sea necesario.</p>
+  <p><b>Corrección de defectos:</b> Se deben corregir los defectos del producto encontrados durante la integración y las pruebas a fin de entregar un software con la funcionalidad correcta.</p>
 
   <div id="p-aseguramiento" style="height: 50px;"></div>
   <h4>Proceso: Aseguramiento de la Calidad</h4>
@@ -299,13 +345,27 @@ Apoyo administrativo </td>
     </div>
   </div>
 
+  <h4><i>Objetivos</i></h4>
+  <p>El proceso de Aseguramiento de la Calidad tiene como objetivo entregar un producto software de calidad, que cumpla con los requisitos del cliente.</p>
+  <h4><i>Actividades</i></h4>
+  <p><b>Validación:</b> el cliente valida que el software satisfaga sus requisitos.</p>
+  <p><b>Entrega:</b> Se elabora la documentación necesaria para que el cliente pueda usar el producto software.</p>
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
 
     </thead>
     <tbody>
-      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<br />Software</td><td></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr></tbody></table>
+      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<br />Software</td><td></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr>
+    </tbody>
+  </table>
+
+  <h4><i>Actividades</i></h4>
+  <p><b>Realizar pruebas de usuario de Software:</b> El usuario realiza las pruebas con el sistema.</p>
+  <p><b>Generar solicitud de cambio:</b> De acuerdo a las pruebas realizadas el cliente puede generar solicitudes de cambio (preventivas, correctivas o mejoras).</p>
+  <p><b>Documentar Manual de Usuario:</b> El Analista debe generar el Manual de Usuario indicando cada prototipo del sistema cómo debe usarse y configurarse a fin de ser un complemento de la capacitación brindada.</p>
+  <p><b>Documentar Manual de Instalación:</b> El Analista debe generar el Manual de Instalación indicando cómo se debe proceder para desplegar el producto en los ambientes del cliente.</p>
 
   <div id="p-gconfiguracion" style="height: 50px;"></div>
   <h4>Proceso: Gestión de la configuración</h4>
@@ -318,12 +378,29 @@ Apoyo administrativo </td>
     </div>
   </div>
 
+  <h4><i>Objetivos</i></h4>
+  <p>El proceso de Gestión de la Configuración tiene como objetivo organizar y controlar la línea base del proyecto y de sus diversos componentes y artefactos.</p>
+  <h4><i>Actividades</i></h4>
+  <p><b>Definir línea base:</b> componentes que se deben tomar como referencia para el desarrollo del proyecto y del producto software.</p>
+  <p><b>Actualizar línea base:</b> realizar las modificaciones necesarias respecto a los elementos tomados como línea base para el desarrollo del proyecto.</p>
+
+
   <table class="table table-striped">
     <thead>
       <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-      <tr><td>LT</td><td>Incorporar especificación de requisitos </td><td>Especificación de requisitos [validado]</td><td></td><td>Especificación de Requisitos [línea base]</td></tr><tr><td>LT</td><td>Incorporar Diseño de Software</td><td>Diseño de Software [verificado]</td><td></td><td>Diseño de Software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Registro de Trazabilidad</td><td>Registro de Trazabilidad [verificado]</td><td></td><td>Registro de Trazabilidad [línea base]</td></tr><tr><td>LT</td><td>Incorporar casos de prueba</td><td>Casos de Prueba [verificado]</td><td></td><td>Casos de Prueba [línea base]</td></tr><tr><td>LT</td><td>Incorporar componente de software</td><td>Componente de software [corregido]</td><td></td><td>Componente de software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Manual de Usuario</td><td>Manual de Usuario</td><td></td><td>Manual de Usuario [línea base]</td></tr></tbody></table>
+      <tr><td>LT</td><td>Incorporar especificación de requisitos </td><td>Especificación de requisitos [validado]</td><td></td><td>Especificación de Requisitos [línea base]</td></tr><tr><td>LT</td><td>Incorporar Diseño de Software</td><td>Diseño de Software [verificado]</td><td></td><td>Diseño de Software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Registro de Trazabilidad</td><td>Registro de Trazabilidad [verificado]</td><td></td><td>Registro de Trazabilidad [línea base]</td></tr><tr><td>LT</td><td>Incorporar casos de prueba</td><td>Casos de Prueba [verificado]</td><td></td><td>Casos de Prueba [línea base]</td></tr><tr><td>LT</td><td>Incorporar componente de software</td><td>Componente de software [corregido]</td><td></td><td>Componente de software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Manual de Usuario</td><td>Manual de Usuario</td><td></td><td>Manual de Usuario [línea base]</td></tr>
+    </tbody>
+  </table>
+
+  <h4><i>Actividades</i></h4>
+  <p><b>Incorporar especificación de requisitos:</b> El documento de Especificación de Requisitos debe formar parte de la línea base con la que el proyecto da inicio, está sujeta a modificaciones que se realizan en cada una de las iteraciones o solicitudes de cambio.</p>
+  <p><b>Incorporar Diseño de Software:</b> El documento de Diseño de Software forma parte de la línea base y está sujeto a las modificaciones que se vayan realizando por los requisitos que el cliente define.</p>
+  <p><b>Incorporar Registro de Trazabilidad:</b> El Registro de Trazabilidad forma parte de la línea base con las que se especifican la primera iteración de requisitos y luego se va modificando según se agregan requisitos a las funcionalidades del software.</p>
+  <p><b>Incorporar casos de prueba:</b> Los casos de prueba forman parte de los documentos que deben ser controlados y administrados como parte del proceso de Gestión de la Configuración.</p>
+  <p><b>Incorporar componente de software:</b> Los componentes de software construidos deben ser añadidos a la línea base para que el resto del equipo de trabajo pueda hacer uso de ellos durante las integraciones de componentes.</p>
+  <p><b>Incorporar Manuales:</b> Los manuales que son enviados a los clientes están sujetos a modificaciones realizadas en cada una de las iteraciones, es por ello que se debe llevar un registro sobre qué versiones se están haciendo llegar al cliente.</p>
 
   <div id="p-gproyecto" style="height: 50px;"></div>
   <h4>Proceso: Gestión del Proyecto</h4>
@@ -335,6 +412,13 @@ Apoyo administrativo </td>
       Fig. 7: Proceso: Gestión del Proyecto
     </div>
   </div>
+
+  <h4><i>Objetivos</i></h4>
+  <p>El proceso de Gestión del Proyecto tiene como objetivo planificar, organizar, dirigir y controlar el proyecto.</p>
+  <h4><i>Actividades</i></h4>
+  <p><b>Planificación:</b> generar los planes que dirigirán el proyecto durante su ciclo de vida.</p>
+  <p><b>Ejecución y Control:</b> Realizar las actualizaciones a los planes del proyecto.</p>
+  <p><b>Cierre:</b> Dar por cerrado una fase o el proyecto.</p>
 
   <table class="table table-striped">
     <thead>
@@ -348,6 +432,22 @@ Apoyo administrativo </td>
       <tr><td>ET</td><td>Cierre de Proyecto o fase</td><td>Plan de Dirección del Proyecto<br />Solicitudes de cambio aprobadas</td><td></td><td>Entregable </td></tr>
       </tbody>
   </table>
+
+  <h4><i>Tareas</i></h4>
+  <p><b>Generar el Acta de Constitución del Proyecto:</b> Con la autorización formal del proyecto se da inicio a las demás procesos.</p>
+  <p><b>Generar el Plan para la Dirección del Proyecto:</b> Se elaboran los planes que dirigirán el proyecto, estos documentos deben ser parte de la línea base.</p>
+  <p><b>Actualizaciones al Plan para la Dirección del Proyecto:</b> Los planes son configurables durante el proyecto hasta ser validados. Las siguientes modificaciones deben ser controladas mediante solicitudes de cambio.</p>
+  <p><b>Generar entregables:</b> Los entregables en este proceso corresponden a los componentes que van a ser entregados al cliente como parte de la gestión del proyecto.</p>
+  <p><b>Cierre de Proyecto o fase:</b> Hito que marca el final de una fase del proyecto o del proyecto en sí mismo.</p>
+
+  <div id="criterios" style="height: 50px;"></div>
+  <h4>Criterios de Adaptabilidad</h4>
+  <ul>
+    <li>Uso de RUP que tiene un carácter adaptativo, fruto de su vocación iterativa, incremental y unificada.</li>
+    <li>Adaptabilidad continua del producto, de manera que en cada iteración el producto vaya creciendo y se vaya acoplando a lo que los usuarios quieren realmente.</li>
+    <li>Para que la metodología sea ágil no se espera a la etapa de Transición de RUP para adaptar el sistema.</li>
+    <li>Tolerante a los cambios</li>
+  </ul>
 
   <div id="plantillas" style="height: 50px;"></div>
   <h4>Plantillas</h4>
