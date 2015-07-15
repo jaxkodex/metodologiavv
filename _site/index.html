@@ -288,6 +288,7 @@ Apoyo administrativo </td>
     <table class="table table-striped">
       <thead>
           <tr>
+            <th>Actividad</th>
             <th>Rol</th>
             <th>Tarea </th>
             <th>Entrada</th>
@@ -296,9 +297,19 @@ Apoyo administrativo </td>
           </tr>
       </thead>
       <tbody>
-        <tr><td>ET</td><td>Revisar el Plan de Proyecto</td><td>Plan de Proyecto</td><td>Reuniones </td><td>Plan de Proyecto [revisado]</td>
+        <tr>
+          <td>Revisar documentación</td>
+          <td>ET</td>
+          <td>Revisar el Plan de Proyecto</td>
+          <td>Plan de Proyecto</td>
+          <td>Reuniones </td>
+          <td>Plan de Proyecto [revisado]</td>
         </tr>
-        <tr><td>ET</td><td>Revisar el Enunciado de trabajo del Proyecto</td><td>Enunciado de trabajo</td><td>Reuniones </td><td>Enunciado de trabajo [revisado]</td></tr>
+        <tr>
+          <td>Revisar documentación</td>
+          <td>ET</td>
+          <td>Revisar el Enunciado de trabajo del Proyecto</td>
+          <td>Enunciado de trabajo</td><td>Reuniones </td><td>Enunciado de trabajo [revisado]</td></tr>
       </tbody>
     </table>
 
@@ -328,11 +339,18 @@ Apoyo administrativo </td>
 
   <table class="table table-striped">
     <thead>
-      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+      <tr>
+        <th>Actividad</th><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-    <tr><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr><tr><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos<br />Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr>
-    <tr><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr><tr><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr><tr><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de Trazabilidad<br />Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr><tr><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr><tr><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr><tr><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr>
+    <tr><td>Requisitos</td><td>AN, CL</td><td>Realizar la especificación de requisitos </td><td>Plan de Proyecto Enunciado de trabajo del Proyecto </td><td></td><td>Especificación de Requisitos </td></tr>
+    <tr><td>Requisitos</td><td>AN, LT </td><td>Obtener aprobación de la Especificación de Requisitos </td><td>Especificación de Requisitos<br />Plan de Proyecto</td><td></td><td>Especificación de Requisitos &nbsp;[verificado]</td></tr>
+    <tr><td>Requisitos</td><td>CL, AN</td><td>Obtener validación de la Especificación de Requisitos </td><td>Especificación de Requisitos &nbsp;[verificado]</td><td>Review, Validación dirigida por pruebas</td><td>Especificación de Requisitos &nbsp;[validado]</td></tr>
+    <tr><td>Análisis y diseño</td><td>AN, DIS</td><td>Realizar el Diseño del Software</td><td>Especificación de requisitos [validado]</td><td>Reuniones facilitadoras</td><td>Documento de Diseño Matriz de Trazabilidad</td></tr>
+    <tr><td>Análisis y diseño</td><td>Requisitos</td><td>AN, DIS</td><td>Obtener aprobación del Diseño de Software</td><td>Documento de Diseño<p class="c0 c3"><span class="c34">Matriz de Trazabilidad<br />Especificación de Requisitos [validado]</td><td>Reuniones</td><td>Documento de Diseño [verificado]Registro de Trazabilidad [verificado]</td></tr>
+    <tr><td>Análisis y diseño</td><td>DIS</td><td>Elaborar los casos de prueba</td><td>Especificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas de caja negra, pruebas de caja blanca</td><td>Casos de Prueba </td></tr>
+    <tr><td>Análisis y diseño</td><td>DIS, AN </td><td>Obtener aprobación de los casos de prueba</td><td>Casos de PruebaEspecificación de Requisitos [validado]<br />Documento de Diseño [verificado]</td><td>Pruebas</td><td>Casos de Prueba [verificado]</td></tr>
+    <tr><td>Ajustes</td><td>AN, LT, CL, GP </td><td>Realizar acciones correctivas, preventivas o mejoras </td><td>Especificación de Requisitos Plan de Proyecto</td><td>Revisión</td><td><p class="c0 c3"><span class="c34 c6">Solicitud de cambio</td></tr>
     </tbody>
   </table>
 
@@ -367,12 +385,16 @@ Apoyo administrativo </td>
 
   <table class="table table-striped">
     <thead>
-      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
-
-      </thead>
-      <tbody>
-      <tr><td>PR</td><td>Construcción de componentes </td><td>Documento de ArquitecturaCasos de Prueba [verificado]</td><td>Codificación de pares, Analizador de código estático</td><td>Componente Software </td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Componente Software [defectuoso]</td><td>Análisis de defectos</td><td>Componente Software [corregido]</td></tr><tr><td>PR</td><td>Actualizar los casos de prueba </td><td>Casos de Prueba [verificado]</td><td>Análisis de casos de pruebas</td><td>Componente Software [probado]</td></tr><tr><td>PR</td><td>Integración de componentes software </td><td>Componente Software [corregido]</td><td>Git, Integración Continua</td><td>Software [integrado]</td></tr><tr><td>PR</td><td>Realizar pruebas unitarias de software</td><td>Casos de Prueba [verificado]</td><td>Herramientas de pruebas unitarias</td><td>Software [probado]</td></tr><tr><td>PR</td><td>Corrección de defectos </td><td>Software [probado]</td><td></td><td>Software [corregido]</td></tr>
-      </tbody>
+      <tr><th>Actividad</th><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Desarrollo</td><td>PR</td><td>Construcción de componentes </td><td>Documento de ArquitecturaCasos de Prueba [verificado]</td><td>Codificación de pares, Analizador de código estático</td><td>Componente Software </td></tr>
+      <tr><td>Desarrollo</td><td>PR</td><td>Corrección de defectos </td><td>Componente Software [defectuoso]</td><td>Análisis de defectos</td><td>Componente Software [corregido]</td></tr>
+      <tr><td>Desarrollo</td><td>PR</td><td>Actualizar los casos de prueba </td><td>Casos de Prueba [verificado]</td><td>Análisis de casos de pruebas</td><td>Componente Software [probado]</td></tr>
+      <tr><td>Desarrollo</td><td>PR</td><td>Integración de componentes software </td><td>Componente Software [corregido]</td><td>Git, Integración Continua</td><td>Software [integrado]</td></tr>
+      <tr><td>Pruebas</td><td>PR</td><td>Realizar pruebas unitarias de software</td><td>Casos de Prueba [verificado]</td><td>Herramientas de pruebas unitarias</td><td>Software [probado]</td></tr>
+      <tr><td>Pruebas</td><td>PR</td><td>Corrección de defectos </td><td>Software [probado]</td><td></td><td>Software [corregido]</td></tr>
+    </tbody>
   </table>
 
   <h4><i>Tareas</i></h4>
@@ -403,11 +425,14 @@ Apoyo administrativo </td>
 
   <table class="table table-striped">
     <thead>
-      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+      <tr><th>Actividad</th><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
 
     </thead>
     <tbody>
-      <tr><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr><tr><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr><tr><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<br />Software</td><td></td><td>Manual de Usuario</td></tr><tr><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr>
+      <tr><td>Validación</td><td>CL</td><td>Realizar pruebas de usuario de Software </td><td>Software [corregido]</td><td>Reuniones, presentación de software</td><td>Software [probado CL]<br />Solicitud de corrección de defectos</td></tr>
+      <tr><td>Validación</td><td>CL</td><td><p class="c0 c3"><span class="c6 c34">Generar solicitud de cambio</td><td>Software [probado CL]<br />Nuevo Requerimiento de Usuario</td><td></td><td>Solicitud de correcciónSolicitud de cambio </td></tr>
+      <tr><td>Entrega</td><td>AN</td><td>Documentar Manual de Usuario</td><td>Documento de Diseño [verificado]<br />Software</td><td></td><td>Manual de Usuario</td></tr>
+      <tr><td>Entrega</td><td>AN</td><td>Documentar Manual de Instalación </td><td>Documento de Arquitectura </td><td></td><td>Manual de Instalación </td></tr>
     </tbody>
   </table>
 
@@ -437,10 +462,15 @@ Apoyo administrativo </td>
 
   <table class="table table-striped">
     <thead>
-      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+      <tr><th>Actividad</th><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-      <tr><td>LT</td><td>Incorporar especificación de requisitos </td><td>Especificación de requisitos [validado]</td><td></td><td>Especificación de Requisitos [línea base]</td></tr><tr><td>LT</td><td>Incorporar Diseño de Software</td><td>Diseño de Software [verificado]</td><td></td><td>Diseño de Software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Registro de Trazabilidad</td><td>Registro de Trazabilidad [verificado]</td><td></td><td>Registro de Trazabilidad [línea base]</td></tr><tr><td>LT</td><td>Incorporar casos de prueba</td><td>Casos de Prueba [verificado]</td><td></td><td>Casos de Prueba [línea base]</td></tr><tr><td>LT</td><td>Incorporar componente de software</td><td>Componente de software [corregido]</td><td></td><td>Componente de software [línea base]</td></tr><tr><td>LT</td><td>Incorporar Manual de Usuario</td><td>Manual de Usuario</td><td></td><td>Manual de Usuario [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar especificación de requisitos </td><td>Especificación de requisitos [validado]</td><td></td><td>Especificación de Requisitos [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar Diseño de Software</td><td>Diseño de Software [verificado]</td><td></td><td>Diseño de Software [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar Registro de Trazabilidad</td><td>Registro de Trazabilidad [verificado]</td><td></td><td>Registro de Trazabilidad [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar casos de prueba</td><td>Casos de Prueba [verificado]</td><td></td><td>Casos de Prueba [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar componente de software</td><td>Componente de software [corregido]</td><td></td><td>Componente de software [línea base]</td></tr>
+      <tr><td>Definir línea base<br />Actualizar línea base</td><td>LT</td><td>Incorporar Manual de Usuario</td><td>Manual de Usuario</td><td></td><td>Manual de Usuario [línea base]</td></tr>
     </tbody>
   </table>
 
@@ -472,14 +502,14 @@ Apoyo administrativo </td>
 
   <table class="table table-striped">
     <thead>
-      <tr><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
+      <tr><th>Actividad</th><th>Rol</th><th>Tarea </th><th>Entrada</th><th>Herramienta / Técnica </th><th>Salida</th></tr>
     </thead>
     <tbody>
-      <tr><td>GP, CL</td><td>Generar el Acta de Constitución del Proyecto</td><td>Caso de Negocio<br />Enunciado de trabajo del proyecto </td><td>Reuniones </td><td>Acta de Constitución del Proyecto </td></tr>
-      <tr><td>GP</td><td>Generar el Plan para la Dirección del Proyecto</td><td>Acta de Constitución del Proyecto</td><td></td><td>Plan para la Dirección del Proyecto</td></tr>
-      <tr><td>GP</td><td>Actualizaciones al Plan para la Dirección del Proyecto </td><td>Plan para la Dirección del Proyecto</td><td></td><td>Plan para la Dirección del Proyecto [actualizado]</td></tr>
-      <tr><td>ET</td><td>Generar entregables </td><td>Plan para la Dirección del Proyecto</td><td></td><td>Entregable </td></tr>
-      <tr><td>ET</td><td>Cierre de Proyecto o fase</td><td>Plan de Dirección del Proyecto<br />Solicitudes de cambio aprobadas</td><td></td><td>Entregable </td></tr>
+      <tr><td>Planificación</td><td>GP, CL</td><td>Generar el Acta de Constitución del Proyecto</td><td>Caso de Negocio<br />Enunciado de trabajo del proyecto </td><td>Reuniones </td><td>Acta de Constitución del Proyecto </td></tr>
+      <tr><td>Planificación</td><td>GP</td><td>Generar el Plan para la Dirección del Proyecto</td><td>Acta de Constitución del Proyecto</td><td></td><td>Plan para la Dirección del Proyecto</td></tr>
+      <tr><td>Ejecución y Control</td><td>GP</td><td>Actualizaciones al Plan para la Dirección del Proyecto </td><td>Plan para la Dirección del Proyecto</td><td></td><td>Plan para la Dirección del Proyecto [actualizado]</td></tr>
+      <tr><td>Ejecución y Control</td><td>ET</td><td>Generar entregables </td><td>Plan para la Dirección del Proyecto</td><td></td><td>Entregable </td></tr>
+      <tr><td>Cierre</td><td>ET</td><td>Cierre de Proyecto o fase</td><td>Plan de Dirección del Proyecto<br />Solicitudes de cambio aprobadas</td><td></td><td>Entregable </td></tr>
       </tbody>
   </table>
 
